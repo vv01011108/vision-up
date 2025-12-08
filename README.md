@@ -24,6 +24,7 @@
 ---
 
 ## 📁 프로젝트 구조
+```
 vision-up/
 ├── backend/
 │   ├── app.py
@@ -36,6 +37,7 @@ vision-up/
     ├── public/
     ├── package.json
     └── vite.config.js
+```
 
 ---
 
