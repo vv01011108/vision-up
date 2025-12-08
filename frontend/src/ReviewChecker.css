@@ -1,0 +1,268 @@
+/* 전체 배경 & 가운데 정렬 */
+.rc-page {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #1f2933, #111827);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+  box-sizing: border-box;
+}
+
+/* 메인 카드 래퍼 */
+.rc-container {
+  width: 100%;
+  max-width: 720px;
+  color: #f9fafb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+/* 헤더 */
+.rc-header {
+  margin-bottom: 24px;
+}
+
+.rc-title {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.rc-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.rc-subtitle span {
+  color: #f97316;
+  font-weight: 600;
+}
+
+/* 카드 공통 스타일 */
+.rc-card {
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 16px;
+  padding: 20px 20px 18px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+.rc-input-card {
+  margin-bottom: 18px;
+}
+
+/* 레이블 */
+.rc-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #e5e7eb;
+}
+
+/* 텍스트 영역 */
+.rc-textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 110px;
+  border-radius: 12px;
+  border: 1px solid #4b5563;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+  background-color: #020617;
+  color: #f9fafb;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.rc-textarea::placeholder {
+  color: #6b7280;
+}
+
+.rc-textarea:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 1px rgba(249, 115, 22, 0.5);
+}
+
+/* 버튼 */
+.rc-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.rc-button {
+  border: none;
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f97316, #fb923c);
+  color: #111827;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 10px 25px rgba(248, 113, 22, 0.35);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.1s ease;
+}
+
+.rc-button:disabled {
+  opacity: 0.6;
+  box-shadow: none;
+  cursor: default;
+}
+
+.rc-button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(248, 113, 22, 0.45);
+}
+
+.rc-button:not(:disabled):active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(248, 113, 22, 0.35);
+}
+
+/* 판별 결과 */
+.rc-result {
+  margin-top: 16px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(248, 113, 22, 0.6);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.rc-result-label {
+  font-weight: 600;
+  color: #fbbf24;
+}
+
+.rc-result-value {
+  font-weight: 700;
+}
+
+/* 최근 기록 카드 */
+.rc-recent-card {
+  margin-top: 8px;
+}
+
+.rc-recent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.rc-recent-header h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.rc-link-button {
+  border: none;
+  background: transparent;
+  color: #9ca3af;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 999px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.rc-link-button:hover:not(:disabled) {
+  background-color: rgba(148, 163, 184, 0.15);
+  color: #e5e7eb;
+}
+
+.rc-link-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.rc-empty {
+  margin: 6px 0 4px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* 최근 리스트 */
+.rc-recent-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rc-recent-item {
+  padding: 10px 0;
+  border-top: 1px solid rgba(55, 65, 81, 0.7);
+}
+
+.rc-recent-item:first-child {
+  border-top: none;
+}
+
+.rc-recent-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+/* 배지 */
+.rc-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.rc-badge-ai {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #fecaca;
+  border: 1px solid rgba(248, 113, 113, 0.8);
+}
+
+.rc-badge-real {
+  background-color: rgba(22, 163, 74, 0.15);
+  color: #bbf7d0;
+  border: 1px solid rgba(34, 197, 94, 0.8);
+}
+
+.rc-date {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.rc-recent-text {
+  margin: 0;
+  font-size: 13px;
+  color: #e5e7eb;
+  white-space: pre-wrap;
+}
+
+/* 반응형 */
+@media (max-width: 600px) {
+  .rc-page {
+    padding: 24px 12px;
+  }
+
+  .rc-card {
+    padding: 16px 14px 14px;
+  }
+
+  .rc-title {
+    font-size: 22px;
+  }
+}

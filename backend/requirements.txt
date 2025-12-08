@@ -1,0 +1,12 @@
+flask
+flask-cors
+flask_sqlalchemy
+pymysql
+cryptography
+transformers
+torch
+safetensors
+sentencepiece
+
+설치
+pip install -r requirements.txt

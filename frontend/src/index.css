@@ -1,0 +1,14 @@
+/* 화면 전체를 React가 먹도록 */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 기본 배경을 아예 여기에 깔아버리기 */
+body {
+  background: linear-gradient(135deg, #1f2933, #111827);
+}

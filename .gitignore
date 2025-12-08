@@ -1,0 +1,49 @@
+# ---- Backend (Python / Flask) ----
+
+# 모델 체크포인트 (대용량 → GitHub 업로드 금지)
+backend/checkpoint-462/
+
+# 가상환경(venv)
+backend/flask_kobert/
+
+# Python 캐시
+backend/__pycache__/
+backend/**/*.pyc
+
+# 환경 변수 파일
+backend/.env
+
+
+# ---- Frontend (React / Vite) ----
+
+# 패키지 디렉토리
+frontend/node_modules/
+
+# 빌드 결과물
+frontend/dist/
+frontend/dist-ssr/
+
+# 환경별 설정 파일
+*.local
+
+
+# ---- logs ----
+
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---- Editor directories and files ----
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
