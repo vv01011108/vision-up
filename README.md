@@ -26,16 +26,16 @@
 ## 📁 프로젝트 구조
 vision-up/
 ├── backend/
-│ ├── app.py
-│ ├── requirements.txt
-│ ├── checkpoint-462/ ← Google Drive 저장 (GitHub 제외)
-│ └── flask_kobert/ ← 가상환경(venv) (GitHub 제외)
+│   ├── app.py
+│   ├── requirements.txt
+│   ├── checkpoint-462/        ← Google Drive에 저장 (GitHub 제외)
+│   └── flask_kobert/          ← 가상환경(venv) (GitHub 제외)
 │
 └── frontend/
-├── src/
-├── public/
-├── package.json
-└── vite.config.js
+    ├── src/
+    ├── public/
+    ├── package.json
+    └── vite.config.js
 
 ---
 
